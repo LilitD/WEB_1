@@ -1,0 +1,245 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+li{
+	text-decoration: none;
+	list-style: none;
+}
+
+h1{
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+body{
+
+	font-family: 'Tinos', serif;
+}
+.logo {
+	background: #000;
+	width: 100%;
+
+
+	display: flex;
+	justify-content: center;
+}
+
+p{
+	margin-bottom: 20px;
+}
+.graficlogo{
+	padding: 10px;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+nav{
+	margin: auto;
+	width: 890px;
+	height: 60px;
+}
+.topnav{
+	background-color: #fff;
+	font-size: 18px;
+	margin-top: 40px;
+}
+.topnav a{
+	color: #000;
+	text-align: center;
+	padding: 14px 16px;
+	font-size: 16px;
+}
+.topnav a:hover{
+	border-bottom: 2px solid #000;
+}
+.topnav .icon{
+	display: none;
+}
+
+.mw-100{
+	max-width: 100%;
+}
+
+.advantages__container{
+	display: flex;
+	justify-content: center;
+}
+
+.advantages{
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+	width: 70%;
+	display: flex;
+	justify-content: space-between; 
+	text-align: center;
+	flex-wrap: wrap;
+}
+
+.advantages__item{
+	width: 30%
+}
+
+
+footer{
+	width: 100%;
+	height: auto;
+	background: #000;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 25px;
+}
+
+footer a{
+	color: white;
+	font-size: 14px;
+	margin-left: 10px;
+}
+
+footer nav a:hover{
+	border-bottom: 1px solid white;
+}
+
+footer p{
+	color: white;
+	padding-bottom: 20px;
+}
+
+.social img{
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.social img:hover{
+	background: #8A7F8E;
+	border-radius: 50%;
+}
+
+#map{
+	width: 100%;
+	height: 400px;
+}
+
+.form{
+	width: 50%;
+	margin: 50px auto;
+}
+.feedback-input{
+
+	color: #000;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 20px;
+	background-color: #fff;
+	padding: 13px; 
+	margin-bottom: 10px;
+	width: 100%;
+
+	border: 0px solid transparent;
+	border-bottom: 2px solid #000;
+}
+
+textarea{
+	width: 100%;
+	height: 150px;
+	padding: 10px; 
+	resize: vertical;
+}
+
+.button-submit{
+	
+	width: 107%;
+	border: 0px solid transparent;
+	cursor: pointer;
+	background-color: #000;
+	color: white; 
+	font-size: 18px;
+	padding-top: 22px;
+	padding-bottom: 22px;
+	transition: all 0.3s;
+	margin-top: -4px;
+	font-weight: 300;
+}
+
+.button-submit:hover{
+	background-color: #fff;
+	color: #000;
+	border: 6px solid #000;
+}
+
+
+.about_container{
+	margin-top: 50px;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 50px 100px;
+}
+
+.about_img{
+	max-width: 100%;
+}
+
+.about_container p{
+	margin-top: 10px; 
+}
+
+.about{
+	width: 80%;
+	margin: 50px auto;	
+	text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 800px){
+	.topnav a:not(:first-child){
+		display: none;
+	}
+	.topnav a.icon{
+		float: right;
+		margin-top: -17px;
+		display: block;
+		color: black;
+	}
+	nav{
+		width: 100%;
+
+	}
+	.topnav.responsive{
+		position: relative;
+	}
+	.topnav.responsive a.icon{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav.responsive a{
+		float: none;
+		display: block;
+		text-align: left;
+	}
+
+	.advantages__item{
+		width: 45%;
+	}
+}
+
+@media screen and (max-width: 420px){
+	.advantages{
+		flex-direction: column;
+	}
+		.advantages__item{
+		width: 100%;
+	}
+
+
+.about_container{
+	grid-template-columns: auto;
+}
+
+}
